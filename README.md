@@ -2,6 +2,38 @@
 
 EquipCare is a Django web application for managing shared university laboratory equipment. It supports equipment discovery, booking and returns, condition tracking, faults, maintenance, and equipment-utilisation reporting.
 
+## Live Application
+
+The deployed EquipCare application is available at:
+
+http://51.21.250.59
+
+The application is hosted on an AWS EC2 instance and runs using Docker Compose with Gunicorn.
+
+### Demo Accounts
+
+The application contains seeded demonstration accounts for testing different roles.
+
+- Administrator: `admin`
+- Laboratory Staff: `labstaff`
+- Student: `maya.student`
+
+Passwords are provided in the project submission documentation.
+
+### Deployment
+
+The production deployment uses:
+
+- AWS EC2
+- Ubuntu
+- Docker
+- Docker Compose
+- Gunicorn
+- SQLite
+- WhiteNoise for static files
+
+The application uses a persistent Docker volume for the SQLite database.
+
 ## Features
 
 - Account registration and secure sign-in
